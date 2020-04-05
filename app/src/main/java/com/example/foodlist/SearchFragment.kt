@@ -7,14 +7,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_main.*
 
-class Search: Fragment() {
+class SearchFragment: Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val rootView = inflater.inflate(R.layout.search,fragment_up,false)
+        val rootView = inflater.inflate(R.layout.search,fragment_container,false)
         return rootView
     }
 }

@@ -5,14 +5,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="345dp"
         android:layout_marginTop="15dp"
         android:src="@drawable/ic_settings_black_24dp"
-        android:tint="@android:color/holo_blue_light"></ImageView>
+        android:tint="@android:color/holo_blue_light" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,21 +21,19 @@
         android:fontFamily="cursive"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:textColor="@android:color/holo_green_dark"
-
-        ></TextView>
+        android:textColor="@android:color/holo_green_dark" />
     <androidx.cardview.widget.CardView
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        app:cardCornerRadius="30dp">
+        app:cardCornerRadius="@dimen/recipe_card_radius">
 
+        <!--TODO  add the correct scaleType so the cards doesn't show empty spaces-->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginVertical="25dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/kabab"></ImageView>
+            android:src="@drawable/kabab" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,9 +41,8 @@
             android:layout_gravity="bottom"
             android:layout_marginHorizontal="50dp"
             android:fontFamily="cursive"
-            android:textSize="20dp"
-            android:textColor="@android:color/holo_blue_dark"
-            ></TextView>
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_dark" />
     </androidx.cardview.widget.CardView>
 
 
@@ -54,13 +51,13 @@
         android:layout_margin="25dp"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        app:cardCornerRadius="30dp">
-
+        app:cardCornerRadius="@dimen/recipe_card_radius">
+        <!--TODO  add the correct scaleType so the cards doesn't show empty spaces-->
         <ImageView
+            android:scaleType="centerCrop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginVertical="15dp"
-            android:src="@drawable/frout"></ImageView>
+            android:src="@drawable/frout" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,10 +65,8 @@
             android:layout_gravity="bottom"
             android:layout_marginHorizontal="50dp"
             android:fontFamily="cursive"
-            android:textSize="20dp"
-            android:textColor="@android:color/holo_blue_dark"
-            ></TextView>
-
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_dark" />
     </androidx.cardview.widget.CardView>
 
 
